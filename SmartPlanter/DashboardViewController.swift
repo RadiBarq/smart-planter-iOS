@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  SecondViewController.swift
 //  SmartPlanter
 //
 //  Created by Harri on 5/9/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class DashBoardViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
