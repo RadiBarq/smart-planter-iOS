@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B3E01892473487200AFD041 /* SensorDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E01882473487200AFD041 /* SensorDetailsViewController.swift */; };
+		4B3E018B2473566E00AFD041 /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E018A2473566E00AFD041 /* NetworkModel.swift */; };
 		4B6D09DE246603F600586F35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6D09DD246603F600586F35 /* AppDelegate.swift */; };
 		4B6D09E0246603F600586F35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6D09DF246603F600586F35 /* SceneDelegate.swift */; };
 		4B6D09E2246603F600586F35 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6D09E1246603F600586F35 /* SettingsViewController.swift */; };
@@ -14,9 +16,19 @@
 		4B6D09E7246603F600586F35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B6D09E5246603F600586F35 /* Main.storyboard */; };
 		4B6D09E9246603F800586F35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B6D09E8246603F800586F35 /* Assets.xcassets */; };
 		4B6D09EC246603F800586F35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B6D09EA246603F800586F35 /* LaunchScreen.storyboard */; };
+		4B7F3086246F31C400C2DBAA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F3085246F31C400C2DBAA /* LoginViewController.swift */; };
+		4B7F34CC2470716F00C2DBAA /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F34CB2470716F00C2DBAA /* MainTabBarController.swift */; };
+		4B7F34CE2470735E00C2DBAA /* DashBoardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F34CD2470735E00C2DBAA /* DashBoardCollectionViewCell.swift */; };
+		4B7F34D224708C0D00C2DBAA /* SensorsSettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F34D124708C0D00C2DBAA /* SensorsSettingTableViewController.swift */; };
+		4B9C8BB42472C2B100A69E3F /* SensorSettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9C8BB32472C2B100A69E3F /* SensorSettingTableViewCell.swift */; };
+		4B9C8BB62472D17700A69E3F /* ImagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9C8BB52472D17700A69E3F /* ImagesTableViewController.swift */; };
+		7B53A209478BF20C6FBC0DA7 /* Pods_SmartPlanter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C331ACD83E30A7033A7B017 /* Pods_SmartPlanter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C331ACD83E30A7033A7B017 /* Pods_SmartPlanter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartPlanter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B3E01882473487200AFD041 /* SensorDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorDetailsViewController.swift; sourceTree = "<group>"; };
+		4B3E018A2473566E00AFD041 /* NetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
 		4B6D09DA246603F600586F35 /* SmartPlanter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartPlanter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B6D09DD246603F600586F35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B6D09DF246603F600586F35 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +38,14 @@
 		4B6D09E8246603F800586F35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B6D09EB246603F800586F35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B6D09ED246603F800586F35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B7F3085246F31C400C2DBAA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4B7F34CB2470716F00C2DBAA /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		4B7F34CD2470735E00C2DBAA /* DashBoardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardCollectionViewCell.swift; sourceTree = "<group>"; };
+		4B7F34D124708C0D00C2DBAA /* SensorsSettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorsSettingTableViewController.swift; sourceTree = "<group>"; };
+		4B9C8BB32472C2B100A69E3F /* SensorSettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorSettingTableViewCell.swift; sourceTree = "<group>"; };
+		4B9C8BB52472D17700A69E3F /* ImagesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesTableViewController.swift; sourceTree = "<group>"; };
+		71D17D0492A7C163A3775C6B /* Pods-SmartPlanter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartPlanter.release.xcconfig"; path = "Target Support Files/Pods-SmartPlanter/Pods-SmartPlanter.release.xcconfig"; sourceTree = "<group>"; };
+		DD5F19B86D6CB6A6B6E7ED1A /* Pods-SmartPlanter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartPlanter.debug.xcconfig"; path = "Target Support Files/Pods-SmartPlanter/Pods-SmartPlanter.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +53,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B53A209478BF20C6FBC0DA7 /* Pods_SmartPlanter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23959F10B2AFEBFDA7378FFE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD5F19B86D6CB6A6B6E7ED1A /* Pods-SmartPlanter.debug.xcconfig */,
+				71D17D0492A7C163A3775C6B /* Pods-SmartPlanter.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4B6D09D1246603F500586F35 = {
 			isa = PBXGroup;
 			children = (
 				4B6D09DC246603F600586F35 /* SmartPlanter */,
 				4B6D09DB246603F600586F35 /* Products */,
+				23959F10B2AFEBFDA7378FFE /* Pods */,
+				B331A3E03B415FFFD9A7F095 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,8 +98,24 @@
 				4B6D09E8246603F800586F35 /* Assets.xcassets */,
 				4B6D09EA246603F800586F35 /* LaunchScreen.storyboard */,
 				4B6D09ED246603F800586F35 /* Info.plist */,
+				4B7F3085246F31C400C2DBAA /* LoginViewController.swift */,
+				4B7F34CB2470716F00C2DBAA /* MainTabBarController.swift */,
+				4B7F34CD2470735E00C2DBAA /* DashBoardCollectionViewCell.swift */,
+				4B7F34D124708C0D00C2DBAA /* SensorsSettingTableViewController.swift */,
+				4B9C8BB32472C2B100A69E3F /* SensorSettingTableViewCell.swift */,
+				4B9C8BB52472D17700A69E3F /* ImagesTableViewController.swift */,
+				4B3E01882473487200AFD041 /* SensorDetailsViewController.swift */,
+				4B3E018A2473566E00AFD041 /* NetworkModel.swift */,
 			);
 			path = SmartPlanter;
+			sourceTree = "<group>";
+		};
+		B331A3E03B415FFFD9A7F095 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C331ACD83E30A7033A7B017 /* Pods_SmartPlanter.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +125,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B6D09F0246603F800586F35 /* Build configuration list for PBXNativeTarget "SmartPlanter" */;
 			buildPhases = (
+				02DB9CF75FB85EB0A2440380 /* [CP] Check Pods Manifest.lock */,
 				4B6D09D6246603F500586F35 /* Sources */,
 				4B6D09D7246603F500586F35 /* Frameworks */,
 				4B6D09D8246603F500586F35 /* Resources */,
+				57C18531ED6A371F0566E3F6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,14 +186,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02DB9CF75FB85EB0A2440380 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartPlanter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57C18531ED6A371F0566E3F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartPlanter/Pods-SmartPlanter-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartPlanter/Pods-SmartPlanter-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmartPlanter/Pods-SmartPlanter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4B6D09D6246603F500586F35 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B3E018B2473566E00AFD041 /* NetworkModel.swift in Sources */,
 				4B6D09E4246603F600586F35 /* DashboardViewController.swift in Sources */,
+				4B9C8BB62472D17700A69E3F /* ImagesTableViewController.swift in Sources */,
 				4B6D09E2246603F600586F35 /* SettingsViewController.swift in Sources */,
+				4B7F34CC2470716F00C2DBAA /* MainTabBarController.swift in Sources */,
 				4B6D09DE246603F600586F35 /* AppDelegate.swift in Sources */,
+				4B9C8BB42472C2B100A69E3F /* SensorSettingTableViewCell.swift in Sources */,
+				4B7F34D224708C0D00C2DBAA /* SensorsSettingTableViewController.swift in Sources */,
+				4B7F3086246F31C400C2DBAA /* LoginViewController.swift in Sources */,
+				4B3E01892473487200AFD041 /* SensorDetailsViewController.swift in Sources */,
+				4B7F34CE2470735E00C2DBAA /* DashBoardCollectionViewCell.swift in Sources */,
 				4B6D09E0246603F600586F35 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +386,7 @@
 		};
 		4B6D09F1246603F800586F35 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD5F19B86D6CB6A6B6E7ED1A /* Pods-SmartPlanter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +405,7 @@
 		};
 		4B6D09F2246603F800586F35 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71D17D0492A7C163A3775C6B /* Pods-SmartPlanter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
