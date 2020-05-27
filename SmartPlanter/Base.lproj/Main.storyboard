@@ -82,6 +82,22 @@
             </objects>
             <point key="canvasLocation" x="1657.9710144927537" y="419.86607142857139"/>
         </scene>
+        <!--Planter Controller Table View Controller-->
+        <scene sceneID="k3n-w6-TWp">
+            <objects>
+                <viewController id="j3z-RC-0sN" customClass="PlanterControllerTableViewController" customModule="SmartPlanter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8W2-jE-z2q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Ecj-pa-fNo"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vW0-AF-tbQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rlm-rD-BUr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1658" y="1250"/>
+        </scene>
         <!--Images Table View Controller-->
         <scene sceneID="lsN-gn-Wlp">
             <objects>
@@ -181,11 +197,12 @@
                     <connections>
                         <segue destination="BWl-KK-HOQ" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="dil-jv-Wia" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="v7T-vE-d6x" kind="relationship" relationship="viewControllers" id="nMh-B4-3og"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="-114" y="37"/>
         </scene>
         <!--Dashboard-->
         <scene sceneID="r3m-TM-7EF">
@@ -196,6 +213,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Bql-7j-ECj">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -225,8 +243,28 @@
             </objects>
             <point key="canvasLocation" x="747.82608695652175" y="419.86607142857139"/>
         </scene>
+        <!--Controller-->
+        <scene sceneID="GxI-cA-BCz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="v7T-vE-d6x" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Controller" image="circle.grid.2x2.fill" catalog="system" id="0yx-A9-McA"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="HLO-Zg-2ha">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="j3z-RC-0sN" kind="relationship" relationship="rootViewController" id="QnW-S9-F4I"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RnT-Zl-TH6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748" y="1250"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="circle.grid.2x2.fill" catalog="system" width="128" height="112"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="safari.fill" catalog="system" width="128" height="121"/>
     </resources>

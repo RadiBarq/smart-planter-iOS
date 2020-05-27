@@ -1,0 +1,36 @@
+PODS:
+  - Charts (3.5.0):
+    - Charts/Core (= 3.5.0)
+  - Charts/Core (3.5.0)
+  - ImageViewer.swift (3.0.12):
+    - SDWebImage
+  - SDWebImage (5.6.0):
+    - SDWebImage/Core (= 5.6.0)
+  - SDWebImage/Core (5.6.0)
+  - Socket.IO-Client-Swift (15.2.0):
+    - Starscream (~> 3.1)
+  - Starscream (3.1.1)
+
+DEPENDENCIES:
+  - Charts
+  - ImageViewer.swift (~> 3.0)
+  - Socket.IO-Client-Swift (~> 15.2.0)
+
+SPEC REPOS:
+  trunk:
+    - Charts
+    - ImageViewer.swift
+    - SDWebImage
+    - Socket.IO-Client-Swift
+    - Starscream
+
+SPEC CHECKSUMS:
+  Charts: 40a08591df1f8ad5c223ddedfb1a06da92f24f7c
+  ImageViewer.swift: d4769c57ff8aef6da7e01bb9283f8554469b2498
+  SDWebImage: 21b19f56b4226cdfe3aefe4e6848dc43ed129a86
+  Socket.IO-Client-Swift: 1e3e3a1f09f3312a167f0d781eb2f383d477357c
+  Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
+
+PODFILE CHECKSUM: a01cf99867145a591411e7f747823fbb6474123d
+
+COCOAPODS: 1.8.3

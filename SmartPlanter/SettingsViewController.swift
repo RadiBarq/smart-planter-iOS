@@ -15,9 +15,9 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
     
     // table view
     let tableView = UITableView()
-    let itemsTitle = ["Username", "Planter Type", "Sensors Setting", "Logout"]
-    var itemsDescription = ["Radi Barq", "Sabaar", "", ""]
-    let pickerViewData = ["Sabar", "flower", "sunflower", "tomato", "potatos"]
+    let itemsTitle = ["Username", "Planter Type", "Jobs Setting", "Logout"]
+    var itemsDescription = [NetworkModel.userName, NetworkModel.planterType, "", ""]
+    var pickerViewData = [Plant]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +28,15 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        
+        NetworkModel.getPlantsType { response in
+            switch response {
+            case .success(let result):
+                self.pickerViewData = result
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -100,11 +109,11 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return self.pickerViewData[row]
+        return self.pickerViewData[row].name
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        self.itemsDescription[1] = pickerViewData[row]
+        self.itemsDescription[1] = pickerViewData[row].name
         self.tableView.reloadData()
     }
 }

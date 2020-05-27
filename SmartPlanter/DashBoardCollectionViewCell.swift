@@ -11,7 +11,7 @@ import UIKit
 class DashBoardCollectionViewCell: UICollectionViewCell {
     var titleLabel: UILabel = {
         let label = UILabel()
-        label.textColor = .black
+        label.textColor = .white
         label.font = UIFont.systemFont(ofSize: 20, weight: .semibold)
         label.textAlignment = .center
         return label
@@ -19,7 +19,7 @@ class DashBoardCollectionViewCell: UICollectionViewCell {
     
     var descriptionLabel: UILabel = {
         let label = UILabel()
-        label.textColor = .black
+        label.textColor = .white
         label.font = UIFont.systemFont(ofSize: 16, weight: .semibold)
         label.textAlignment = .center
         return label
@@ -27,7 +27,7 @@ class DashBoardCollectionViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = .green
+        self.backgroundColor = UIColor(red: 50/255, green: 168/255, blue: 81/255, alpha: 1)
         self.addSubview(descriptionLabel)
         self.descriptionLabel.translatesAutoresizingMaskIntoConstraints = false
         self.descriptionLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 10).isActive = true

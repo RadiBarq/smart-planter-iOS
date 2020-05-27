@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4B3E01892473487200AFD041 /* SensorDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E01882473487200AFD041 /* SensorDetailsViewController.swift */; };
 		4B3E018B2473566E00AFD041 /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E018A2473566E00AFD041 /* NetworkModel.swift */; };
+		4B3E018E2473E55800AFD041 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E018D2473E55800AFD041 /* Job.swift */; };
+		4B45957B24754254000E458B /* ImagesTableViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B45957A24754254000E458B /* ImagesTableViewControllerTableViewCell.swift */; };
 		4B6D09DE246603F600586F35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6D09DD246603F600586F35 /* AppDelegate.swift */; };
 		4B6D09E0246603F600586F35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6D09DF246603F600586F35 /* SceneDelegate.swift */; };
 		4B6D09E2246603F600586F35 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6D09E1246603F600586F35 /* SettingsViewController.swift */; };
@@ -16,6 +18,7 @@
 		4B6D09E7246603F600586F35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B6D09E5246603F600586F35 /* Main.storyboard */; };
 		4B6D09E9246603F800586F35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B6D09E8246603F800586F35 /* Assets.xcassets */; };
 		4B6D09EC246603F800586F35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B6D09EA246603F800586F35 /* LaunchScreen.storyboard */; };
+		4B7AA8A8247D2D35007C9A32 /* PlanterControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7AA8A7247D2D35007C9A32 /* PlanterControllerTableViewController.swift */; };
 		4B7F3086246F31C400C2DBAA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F3085246F31C400C2DBAA /* LoginViewController.swift */; };
 		4B7F34CC2470716F00C2DBAA /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F34CB2470716F00C2DBAA /* MainTabBarController.swift */; };
 		4B7F34CE2470735E00C2DBAA /* DashBoardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F34CD2470735E00C2DBAA /* DashBoardCollectionViewCell.swift */; };
@@ -29,6 +32,8 @@
 		3C331ACD83E30A7033A7B017 /* Pods_SmartPlanter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartPlanter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B3E01882473487200AFD041 /* SensorDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorDetailsViewController.swift; sourceTree = "<group>"; };
 		4B3E018A2473566E00AFD041 /* NetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
+		4B3E018D2473E55800AFD041 /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		4B45957A24754254000E458B /* ImagesTableViewControllerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesTableViewControllerTableViewCell.swift; sourceTree = "<group>"; };
 		4B6D09DA246603F600586F35 /* SmartPlanter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartPlanter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B6D09DD246603F600586F35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B6D09DF246603F600586F35 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +43,7 @@
 		4B6D09E8246603F800586F35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B6D09EB246603F800586F35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B6D09ED246603F800586F35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B7AA8A7247D2D35007C9A32 /* PlanterControllerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanterControllerTableViewController.swift; sourceTree = "<group>"; };
 		4B7F3085246F31C400C2DBAA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4B7F34CB2470716F00C2DBAA /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		4B7F34CD2470735E00C2DBAA /* DashBoardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -69,6 +75,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		4B3E018C2473E53F00AFD041 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4B3E018A2473566E00AFD041 /* NetworkModel.swift */,
+				4B3E018D2473E55800AFD041 /* Job.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		4B6D09D1246603F500586F35 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +105,7 @@
 		4B6D09DC246603F600586F35 /* SmartPlanter */ = {
 			isa = PBXGroup;
 			children = (
+				4B3E018C2473E53F00AFD041 /* Model */,
 				4B6D09DD246603F600586F35 /* AppDelegate.swift */,
 				4B6D09DF246603F600586F35 /* SceneDelegate.swift */,
 				4B6D09E1246603F600586F35 /* SettingsViewController.swift */,
@@ -105,7 +121,8 @@
 				4B9C8BB32472C2B100A69E3F /* SensorSettingTableViewCell.swift */,
 				4B9C8BB52472D17700A69E3F /* ImagesTableViewController.swift */,
 				4B3E01882473487200AFD041 /* SensorDetailsViewController.swift */,
-				4B3E018A2473566E00AFD041 /* NetworkModel.swift */,
+				4B45957A24754254000E458B /* ImagesTableViewControllerTableViewCell.swift */,
+				4B7AA8A7247D2D35007C9A32 /* PlanterControllerTableViewController.swift */,
 			);
 			path = SmartPlanter;
 			sourceTree = "<group>";
@@ -236,11 +253,14 @@
 				4B3E018B2473566E00AFD041 /* NetworkModel.swift in Sources */,
 				4B6D09E4246603F600586F35 /* DashboardViewController.swift in Sources */,
 				4B9C8BB62472D17700A69E3F /* ImagesTableViewController.swift in Sources */,
+				4B45957B24754254000E458B /* ImagesTableViewControllerTableViewCell.swift in Sources */,
 				4B6D09E2246603F600586F35 /* SettingsViewController.swift in Sources */,
+				4B3E018E2473E55800AFD041 /* Job.swift in Sources */,
 				4B7F34CC2470716F00C2DBAA /* MainTabBarController.swift in Sources */,
 				4B6D09DE246603F600586F35 /* AppDelegate.swift in Sources */,
 				4B9C8BB42472C2B100A69E3F /* SensorSettingTableViewCell.swift in Sources */,
 				4B7F34D224708C0D00C2DBAA /* SensorsSettingTableViewController.swift in Sources */,
+				4B7AA8A8247D2D35007C9A32 /* PlanterControllerTableViewController.swift in Sources */,
 				4B7F3086246F31C400C2DBAA /* LoginViewController.swift in Sources */,
 				4B3E01892473487200AFD041 /* SensorDetailsViewController.swift in Sources */,
 				4B7F34CE2470735E00C2DBAA /* DashBoardCollectionViewCell.swift in Sources */,

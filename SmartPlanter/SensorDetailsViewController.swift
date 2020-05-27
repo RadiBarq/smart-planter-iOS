@@ -13,31 +13,31 @@ class SensorDetailsViewController: UIViewController, ChartViewDelegate {
 
     lazy var lineChartView: LineChartView =  {
        let chartView = LineChartView()
-        chartView.backgroundColor = .green
+        chartView.backgroundColor = UIColor(red: 50/255, green: 168/255, blue: 81/255, alpha: 1)
         chartView.rightAxis.enabled = false
         let yAxis = chartView.leftAxis
         yAxis.labelFont = .boldSystemFont(ofSize: 12)
         yAxis.setLabelCount(6, force: false)
-        yAxis.labelTextColor = .black
-        yAxis.axisLineColor = .black
+        yAxis.labelTextColor = .white
+        yAxis.axisLineColor = .white
         yAxis.labelPosition = .insideChart
         chartView.xAxis.labelPosition = .bottom
         chartView.xAxis.labelFont = .boldSystemFont(ofSize: 12)
         chartView.xAxis.setLabelCount(6, force: false)
-        chartView.xAxis.labelTextColor = .black
-        chartView.xAxis.axisLineColor = .black
+        chartView.xAxis.labelTextColor = .white
+        chartView.xAxis.axisLineColor = .white
         chartView.animate(xAxisDuration: 1)
         return chartView
     }()
     
     var sensorName: String!
+    var sensorURL: String
     
-    let data = [ChartDataEntry.init(x: 0, y: 38), ChartDataEntry.init(x: 1, y: 38),
-    ChartDataEntry.init(x: 2, y: 39), ChartDataEntry.init(x: 3, y: 38), ChartDataEntry.init(x: 4, y: 38), ChartDataEntry.init(x: 5, y: 38), ChartDataEntry.init(x: 6, y: 38), ChartDataEntry.init(x: 7, y: 25), ChartDataEntry.init(x: 8, y: 40), ChartDataEntry.init(x: 10, y: 40), ChartDataEntry.init(x: 11, y: 30), ChartDataEntry.init(x: 12, y: 10), ChartDataEntry.init(x: 13, y: 5), ChartDataEntry.init(x: 14, y: 38), ChartDataEntry.init(x: 15, y: 10), ChartDataEntry.init(x: 16, y: 50), ChartDataEntry.init(x: 17, y: 2), ChartDataEntry.init(x: 18, y: 60), ChartDataEntry.init(x: 19, y: 3)
-    ]
+    var data = [ChartDataEntry]()
 
-    init(sensorName: String){
+    init(sensorName: String, sensorURL: String){
         self.sensorName = sensorName
+        self.sensorURL = sensorURL
         super.init(nibName: nil, bundle: nil)
     
     }
@@ -59,19 +59,41 @@ class SensorDetailsViewController: UIViewController, ChartViewDelegate {
         self.lineChartView.topAnchor.constraint(equalTo: self.view.topAnchor).isActive = true
         self.lineChartView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor).isActive = true
         
-        self.setData()
+        NetworkModel.getJobHistory(jobURL: self.sensorURL) { respons in
+            switch respons {
+            case .success(let result):
+                self.parseHistory(result: result)
+            case .failure(let error):
+                print(error)
+            }
+        }
         // Do any additional setup after loading the view.
+    }
+    
+    private func parseHistory(result: [JobHistory]) {
+        
+        for history in result {
+            let dateFormatter = DateFormatter()
+            dateFormatter.locale = Locale(identifier: "en_US_POSIX")
+            dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+            let date = dateFormatter.date(from: history.created)!
+            let value = history.value
+            let calendar = Calendar.current
+            let components = calendar.dateComponents([.year, .month, .day, .hour, .minute], from: date)
+            data.append(ChartDataEntry(x: Double(components.minute!), y: Double(value)))
+        }
+        self.setData()
     }
     
     func setData() {
         let set = LineChartDataSet(entries: data, label: self.sensorName)
         set.mode = .cubicBezier
         set.lineWidth = 3
-        set.setColor(.black)
+        set.setColor(.white)
         set.drawCirclesEnabled = false
-        set.fill = Fill(color: .black)
+        set.fill = Fill(color: .white)
         set.fillAlpha = 0.7
-        set.highlightColor = .black
+        set.highlightColor = .white
         set.drawFilledEnabled = true
         let data = LineChartData(dataSet: set)
         data.setDrawValues(false)
@@ -81,6 +103,4 @@ class SensorDetailsViewController: UIViewController, ChartViewDelegate {
     func chartValueSelected(_ chartView: ChartViewBase, entry: ChartDataEntry, highlight: Highlight) {
         print(entry)
     }
-    
-    
 }
